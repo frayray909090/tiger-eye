@@ -236,11 +236,6 @@ local World = GuiLibrary.CreateWindow({
 	["Icon"] = "Tiger/assets/WorldIcon.png", 
 	["IconSize"] = 16
 })
-local Guns = GuiLibrary.CreateWindow({
-	["Name"] = "Guns", 
-	["Icon"] = "Tiger/assets/WorldIcon.png", 
-	["IconSize"] = 16
-})
 local Friends = GuiLibrary.CreateWindow2({
 	["Name"] = "Friends", 
 	["Icon"] = "Tiger/assets/FriendsIcon.png", 
@@ -279,12 +274,6 @@ GUI.CreateButton({
 GUI.CreateButton({
 	["Name"] = "World", 
 	["Function"] = function(callback) World.SetVisible(callback) end, 
-	["Icon"] = "Tiger/assets/WorldIcon.png", 
-	["IconSize"] = 16
-})
-GUI.CreateButton({
-	["Name"] = "Guns", 
-	["Function"] = function(callback) Guns.SetVisible(callback) end, 
 	["Icon"] = "Tiger/assets/WorldIcon.png", 
 	["IconSize"] = 16
 })
