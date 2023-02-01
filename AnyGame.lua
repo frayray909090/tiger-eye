@@ -3541,6 +3541,61 @@ GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].CreateOptionsButton({
 	end
 })
 
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "Guns",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single.Hammer.ITEMPICKUP)
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
+	end
+})
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "remi",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+	end
+})
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "M4A1",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
+	end
+})
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "ak",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+	end
+})
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "m9",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+	end
+})
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "hammer",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single.Hammer.ITEMPICKUP)
+	end
+})
+GuiLibrary["ObjectsThatCanBeSaved"]["FPSWindow"]["Api"].CreateOptionsButton({
+	["Name"] = "knife",
+	["Function"] = function(callback)
+		if callback then 
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
+	end
+})
+
 local HealthText = Instance.new("TextLabel")
 HealthText.Font = Enum.Font.SourceSans
 HealthText.TextSize = 20
