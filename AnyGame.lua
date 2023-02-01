@@ -2026,31 +2026,7 @@ end)
 
 
 
-local inf = false
-runcode(function()
-	local ignorelist = OverlapParams.new()
-	ignorelist.FilterType = Enum.RaycastFilterType.Whitelist
-
-	infstam = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateToggle({
-		["Name"] = "inf", 
-		["Function"] = function(callback)
-			if callback then
-				if not inf then
-					inf = true
-				else
-					inf = false
-				end
-		end,
-		["HoverText"] = "Attack players around you\nwithout aiming at them."
-	})
-	infstampl = infstam.CreateTargetWindow({})
-	infstammethod = infstam.CreateDropdown({
-		["Name"] = "Mode",
-		["List"] = {"Normal", "Bypass", "Root Only"},
-		["Function"] = function() end
-	})
-end)
-
+local inf = true
 while inf == true do
 	wait(1)
 	for i,v in next, getreg() do
