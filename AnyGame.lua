@@ -3541,7 +3541,7 @@ GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].CreateOptionsButton({
 	end
 })
 
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "Guns",
 	["Function"] = function(callback)
 		if callback then 
