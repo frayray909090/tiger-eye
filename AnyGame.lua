@@ -2028,6 +2028,51 @@ runcode(function()
 	})
 end)
 
+
+
+local inf = false
+runcode(function()
+	local ignorelist = OverlapParams.new()
+	ignorelist.FilterType = Enum.RaycastFilterType.Whitelist
+
+	infstam = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
+		["Name"] = "inf", 
+		["Function"] = function(callback)
+			if callback then
+				if not inf then
+					inf = true
+				else
+					inf = false
+				end
+		end,
+		["HoverText"] = "Attack players around you\nwithout aiming at them."
+	})
+	infstampl = infstam.CreateTargetWindow({})
+	infstammethod = infstam.CreateDropdown({
+		["Name"] = "Mode",
+		["List"] = {"Normal", "Bypass", "Root Only"},
+		["Function"] = function() end
+	})
+end)
+
+while States.Inf_Stamina == true do
+	wait(1)
+	for i,v in next, getreg() do
+		if type(v) == 'function' then
+			local t = getupvalues(v) --a1
+			for i2,v2 in next, t do
+				if typeof(t[7]) == "function" and i2 == 4 and typeof(v2) == "number" then
+					if States.InfStaminaLock then
+						setupvalue(v,i2,12)
+					else
+						setupvalue(v,i2,math.huge)
+					end
+				end
+			end
+		end
+	end
+end
+
 local longjumpboost = {["Value"] = 1}
 local longjump = {["Enabled"] = false}
 local longjumpchange = true
