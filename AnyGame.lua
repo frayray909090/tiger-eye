@@ -1,4 +1,3 @@
-
 local GuiLibrary = shared.GuiLibrary
 local players = game:GetService("Players")
 local textservice = game:GetService("TextService")
@@ -2023,27 +2022,6 @@ runcode(function()
 		end
 	})
 end)
-
-
-
-local inf = true
-while inf == true do
-	wait(1)
-	for i,v in next, getreg() do
-		if type(v) == 'function' then
-			local t = getupvalues(v) --a1
-			for i2,v2 in next, t do
-				if typeof(t[7]) == "function" and i2 == 4 and typeof(v2) == "number" then
-					if inf then
-						setupvalue(v,i2,12)
-					else
-						setupvalue(v,i2,math.huge)
-					end
-				end
-			end
-		end
-	end
-end
 
 local longjumpboost = {["Value"] = 1}
 local longjump = {["Enabled"] = false}
