@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frayray909090/tiger-eye-prison-life/main/NewMainScript.lua", true))()
