@@ -4444,7 +4444,7 @@ runcode(function()
 	local oldmove
 	local SafeWalk = {["Enabled"] = false}
 	SafeWalk = GuiLibrary["ObjectsThatCanBeSaved"]["WorldWindow"]["Api"].CreateOptionsButton({
-		["Name"] = "SafeWalk",
+		["Name"] = "AntiVoid",
 		["Function"] = function(callback)
 			if callback then
 				oldmove = controlmodule.moveFunction
