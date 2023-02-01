@@ -3554,48 +3554,54 @@ GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton(
 		end
 	end
 })
---[[GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "remi",
 	["Function"] = function(callback)
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		end
 	end
 })
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "M4A1",
 	["Function"] = function(callback)
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
+		end
 	end
 })
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "ak",
 	["Function"] = function(callback)
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+		end
 	end
 })
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "m9",
 	["Function"] = function(callback)
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+		end
 	end
 })
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "hammer",
 	["Function"] = function(callback)
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single.Hammer.ITEMPICKUP)
+		end
 	end
 })
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+GuiLibrary["ObjectsThatCanBeSaved"]["CombatWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "knife",
 	["Function"] = function(callback)
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
+		end
 	end
-})]]
+})
 
 local HealthText = Instance.new("TextLabel")
 HealthText.Font = Enum.Font.SourceSans
