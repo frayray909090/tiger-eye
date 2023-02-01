@@ -2031,7 +2031,7 @@ runcode(function()
 	local ignorelist = OverlapParams.new()
 	ignorelist.FilterType = Enum.RaycastFilterType.Whitelist
 
-	infstam = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
+	infstam = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateToggle({
 		["Name"] = "inf", 
 		["Function"] = function(callback)
 			if callback then
