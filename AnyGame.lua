@@ -3551,6 +3551,7 @@ GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single.Hammer.ITEMPICKUP)
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
+		end
 	end
 })
 --[[GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
