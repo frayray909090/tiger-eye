@@ -3553,7 +3553,7 @@ GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
 	end
 })
-GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
+--[[GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
 	["Name"] = "remi",
 	["Function"] = function(callback)
 		if callback then 
@@ -3594,7 +3594,7 @@ GuiLibrary["ObjectsThatCanBeSaved"]["GunsWindows"]["Api"].CreateOptionsButton({
 		if callback then 
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP)
 	end
-})
+})]]
 
 local HealthText = Instance.new("TextLabel")
 HealthText.Font = Enum.Font.SourceSans
