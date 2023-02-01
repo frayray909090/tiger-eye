@@ -1,5 +1,5 @@
 if shared.TigerExecuted then
-	local VERSION = "4.09"..(shared.TigerPrivate and " PRIVATE" or "")
+	local VERSION = "1"..(shared.TigerPrivate and " PRIVATE" or "")
 	local customdir = (shared.TigerPrivate and "Tigerprivate/" or "Tiger/")
 	local rainbowvalue = 0
 	local cam = workspace.CurrentCamera
