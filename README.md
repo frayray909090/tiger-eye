@@ -1,3 +1,10 @@
-# Tiger V4
-**When you make a script for 3 years, and blow up on a ripoff lego game**
-_Project I made because I want to expand my creativity_
+#tiger the ui was vxpev4forrolox so give him credits to him
+
+# Tiger V1 -- prison life only more games coming soon
+```Lua
+-- added antivoid
+-- team changer
+-- kill all
+-- fly
+-- kill player
+-- lk player
